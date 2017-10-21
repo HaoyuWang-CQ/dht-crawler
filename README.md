@@ -1,5 +1,5 @@
 ## asyncDHT
-# bran
+
 DHT爬虫，脚本写得有点乱，使用请自行优化。
 
 - downTorrent.py

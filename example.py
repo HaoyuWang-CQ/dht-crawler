@@ -14,9 +14,11 @@ class Crawler(Maga):
         conn = await aiomysql.connect(db='dht',
                                       user='dht',
                                       password='dht',
-                                      host='127.0.0.1',
-                                      charset='utf8',
-                                      unix_socket='/var/run/mysqld/mysqld.sock')
+                                      host='localhost',
+                                      charset='utf8')
+
+        # use TCP/IP rather than unix_socket
+        # unix_socket='/var/run/mysqld/mysqld.sock')
         
         cur = await conn.cursor()
         info_hash = info['info_hash'].lower()
