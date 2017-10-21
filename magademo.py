@@ -1,6 +1,6 @@
 import asyncio
 
-
+#
 async def wget(host):
     print('wget %s...' % host)
     connect = asyncio.open_connection(host, 80)
